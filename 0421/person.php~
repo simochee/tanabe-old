@@ -1,0 +1,7 @@
+<php
+class Person {
+  public $name = '';
+  
+  public function sayHello() {
+    echo 'Hello! Your ' . $this->name . '.';
+  }

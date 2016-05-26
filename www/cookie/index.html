@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Cookie</title>
+</head>
+<body>
+<input readonly id="num">
+<input type="button" id="send">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	var count = 0;
+	$('#num').val(count);
+	$('#send').click(function() {
+		//$.ajax({
+		//	url: './count.php';
+		//});
+		//count++;
+		$('#num').val(count++);
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?php
+
+class FormatedDate {
+  private $date = date('YmdHis');
+
+  public function fDate($format) {
+    $Y = $date.substr(0,4); // Get FullYear
+    $m = $date.substr(4,2); // Get Month
+    $d = $date.substr(6,2); // Get Date
+    $H = $date.substr(8,2); // Get Hours
+    $i = $date.substr(10,2); // Get Minutes
+    $s = $date.substr(12,2); // Get Seconds
+    if($format == 'YYYYMMDD HHIISS') {
+      echo "$Y$m$d $H$i$s\n";
+    } else if($format == 'YYYY/MM/DD HH:II:SS') {
+      echo "$Y/$m/$d $H:%i:$s\n";
+    }
+  }
+}

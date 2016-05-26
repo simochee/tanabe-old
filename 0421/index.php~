@@ -1,0 +1,6 @@
+<?php
+require_once('person.php');
+
+$taro = new Person();
+$taro->name = 'simochee';
+$taro->sayHello();

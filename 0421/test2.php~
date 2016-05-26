@@ -1,0 +1,9 @@
+<?php
+
+$start = date('U');
+
+while(10000);
+
+$end = date('U');
+
+echo ($start-$end);

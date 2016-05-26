@@ -1,0 +1,17 @@
+<?php
+
+$a = 'myValue';
+
+echo "$a\n";
+
+$b = &$a;
+
+echo "$a - $b\n";
+
+$a = 'Welcome';
+
+echo "$a - $b\n";
+
+$b = 'See you\n';
+
+echo "$a - $b\n";

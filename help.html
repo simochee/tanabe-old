@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Help Bookmarks</title>
+</head>
+<body>
+<h1>Help Bookmarks</h1>
+<dl>
+<dt>通常のリファレンス渡し</dt>
+<dd>$a = 'value';<br>$b = &$a;</dd>
+<dd>$aと$bは同じ値を参照する</dd>
+<dt>プロパティとかメソッドとかの対応表</dt>
+<dd>
+<table>
+<thead>
+<tr>
+<th> <th>
+<th>インスタンスプロパティ</th>
+<th>インスタンスメソッド</th>
+<th>静的プロパティ</th>
+<th>静的メソッド<th>
+</tr>
+<tbody>
+<tr>
+<th>外部から -> 演算子で</th>
+<td>$v->name</td>
+<td>$v->name()</td>
+<td>x</td>
+<td>$v->name()</td>
+</tr>
+<tr>
+<th>外部から :: 演算子（スコープ定義演算子）で</th>
+<td>x</td>
+<td>△</td>
+<td>クラス名 :: $name<br>$v :: $name</td>
+<td>$this->name()</td>
+</tr>
+<tr>
+<
+</tbody>
+</table>
+</dd>
+</dl>
+</body>
+</html>
